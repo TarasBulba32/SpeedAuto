@@ -1,0 +1,126 @@
+<html>
+<title>
+  Скорость-Авто
+</title>
+<head>
+<title>Автосервис <br>
+"СКОРОСТЬ-АВТО"</title>
+<meta charset="UTF-8">
+</head>
+<link rel="manifest" href="manifest.json">
+
+
+
+<style>
+    body {
+      font-family: Calibri, sans-serif;
+    }
+
+    header {
+      background-color: #FF4500;
+      color: #000000;
+      padding: 30px;
+      text-align: center;
+    }
+    section {
+      padding: 90px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+
+
+
+    }
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    label, input, textarea, button {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+    }
+</style>
+</body>
+<script>
+if ('serviceWorker' in navigator) {
+ window.addEventListener('load', function() {  
+   navigator.serviceWorker.register('/sw.js').then(
+     function(registration) {
+       // Registration was successful
+       console.log('ServiceWorker registration successful with scope: ', registration.scope); },
+     function(err) {
+       // registration failed :(
+       console.log('ServiceWorker registration failed: ', err);
+     });
+ });
+}
+</script>
+<body>
+  <header>
+    <h1>Автосервис <br> "Скорость-авто"</h1>
+    <IMG SRC='img/gae4car.png' width=120px height=100px>
+    <p><center>
+      г. Москва, ул. Рощина, дом 32
+      </center>
+   
+  </header>
+
+<font size=5>
+
+<p>
+	Добро пожаловать в Автосервис <b>"Скорость-авто"</b>, лучший автосервис Москвы!<br><br>
+	Если у Вас возникла проблема с вашим автомобилем, Автосервис <b>"Скорость-Авто"</b> - ваш самый надежный сервис. Наши специалисты получают дополнительную подготовку к ремонту автомобилей, ремонт качественный и самое главное - все по выгодным условиям.
+	<br><br>
+	Если Вы желаете узнать больше о наших услугах, перейдите по ссылке ниже:<br>
+    <center>
+      <nav>
+        <ul>
+  <li><a  href="avto.html"><img src="img/pngegg.png" width=600px></a></li>
+</ul>
+</nav>
+</center>
+
+
+</p> 
+</font>
+  <center>
+  <IMG src='img/mechanic.jpg' width=700px>
+  </center>
+
+  <center>
+    <font size=6>
+  <p><b>Обратная связь</b></p>
+  
+</font>
+  <form name=form1 action="text.php" method="POST">
+    <label for="name">Ваше имя:</label>
+    <input type="text" name="name" required>
+
+    <label for="email">Ваш Email:</label>
+    <input type="email" name="email" required>
+
+    <label for="message">Сообщение:</label>
+    <textarea name="message" rows="4"></textarea>
+
+     <input type="submit" value="Отправить" />
+
+  </form>
+
+  
+
+  <footer>
+    <p>Автосервис "Скорость-авто" &copy; 2023</p>
+  </footer>
+
+</html> 
