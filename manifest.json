@@ -5,7 +5,7 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "http://localhost/glavnaya.html",
+  "start_url": "index.html",
   "icons": [
     {
       "src": "icons/gae4car16.png",
